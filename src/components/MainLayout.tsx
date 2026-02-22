@@ -1,8 +1,10 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { sections } from '../data';
 import { SectionContent } from './SectionContent';
+import profilePic from './profilepic.png';
 import { User, Github, Linkedin, Mail, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+
 
 interface MainLayoutProps {
   activeSection: string | null;
@@ -91,7 +93,7 @@ export default function MainLayout({ activeSection, setActiveSection }: MainLayo
                   className="w-24 h-24 rounded-full overflow-hidden border-4 border-[var(--color-accent)] shadow-lg mb-4"
                 >
                   <img 
-                    src="profilepic.png" 
+                    src={profilePic} 
                     alt="Profile" 
                     className="w-full h-full object-cover"
                   />
@@ -197,7 +199,7 @@ export default function MainLayout({ activeSection, setActiveSection }: MainLayo
                   className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-8 border-[var(--color-accent)] shadow-2xl mb-8"
                 >
                   <img 
-                    src="https://picsum.photos/seed/ashhar/400" 
+                    src={profilePic} 
                     alt="Profile" 
                     className="w-full h-full object-cover"
                   />
