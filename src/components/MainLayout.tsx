@@ -91,7 +91,7 @@ export default function MainLayout({ activeSection, setActiveSection }: MainLayo
                   className="w-24 h-24 rounded-full overflow-hidden border-4 border-[var(--color-accent)] shadow-lg mb-4"
                 >
                   <img 
-                    src="https://picsum.photos/seed/ashhar/200" 
+                    src="profilepic.png" 
                     alt="Profile" 
                     className="w-full h-full object-cover"
                   />
